@@ -1,0 +1,188 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #3C3DAB;
+    justify-content : center;
+}
+
+img{
+    width:50%;
+    height:50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+}
+
+#bloc{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #3C3DAB;
+    border-radius: 25px;
+    padding: 20px 0 3%;
+    box-shadow: #2c2745 0px 4px 30px -10px;
+    width: 60%;
+    /* text*/
+    color: white;
+    font-family: "OSWALD";
+    font-size: 18px;
+    text-align: center;
+}
+
+ul{
+    padding: 0%;
+    text-align: center;
+}
+
+h1{
+    font-family: "OSWALD";
+}
+
+#button{
+    /* parametre de base*/
+    text-decoration: none;
+    background-color: #DAAE0D;
+    /*couleur text bouton */
+    color: #000000;
+    /*text */
+     font-family :"OSWALD";
+     font-size : 18px;
+     width: 380px;
+     height: 35px;
+     border-radius: 25px;
+     font-weight : bold;
+     transition: transform 0.3s;
+}
+
+#button:hover{
+    background-color: #d8b844;
+    border: 20px;
+    background-size: contain;
+    background-position: -200px center;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    }
+
+#question{
+    font-family: "OSWALD";
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family:"OSWALD";
+}
+
+#quiz, #resultat{
+    margin-top: 30px;
+    margin-bottom: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #3C3DAB;
+    border-radius: 25px;
+    padding: 20px 0 3%;
+    box-shadow: #2c2745 0px 4px 30px -10px;
+    width: 60%;
+    /* text*/
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+    
+#nextbutton{
+    text-decoration: none;
+    background-color: #DAAE0D;
+    color: #000000;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size : 15px;
+    width: 380px;
+    height: 35px;
+    border-radius: 25px;
+    font-weight : bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nextbutton:hover{
+    transition: transform 0.3s;
+    background-color: #d8b844;
+    background-size: contain;
+    background-position: -200px center;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+}
+
+#resultat {
+    display: none;
+}
+    
+.reponses {
+    font-family: "OSWALD";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100px;
+    height: 50px;
+    background-color:#6364a0;
+    border-color: white;          
+    border-radius: 25px;
+    margin: 10px;
+    padding-top: 3%;
+}
+
+
+.question-number {
+    font-family: "OSWALD";
+    font-weight: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #DAAE0D;
+    margin-bottom: 40px;
+}
+
+
+
+#timer-container {
+    display: none;
+    width: 100%;
+    background-color: #ddd;
+    overflow: hidden; /* Assure que la barre intérieure ne dépasse pas */
+    position: relative; /* Nécessaire pour la position absolue de la barre de progression */
+    height: 10px;
+}
+
+#progress {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    position: absolute; /* Permet à la barre de se déplacer de gauche à droite */
+}
+
+.animation {
+    animation: timer 5s linear forwards;
+}
+
+@keyframes timer {
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+
+div{
+    background-color: linear-gradient(#e66465, #9198e5);
+    width: 100%;
+    height: 100%;
+}
+
+.lineaire-simple {
+    background: linear-gradient(blue, pink);
+    width: 100%;
+    height: 100%;
+  }
